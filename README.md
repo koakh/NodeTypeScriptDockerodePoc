@@ -1,3 +1,3 @@
 # README
 
-A minimal typescript starter, with env-cmd, ts-node-dev, some scripts and nothing more...
+A minimal typescript starter, with env-cmd, ts-node-dev, and dockerode starter playground

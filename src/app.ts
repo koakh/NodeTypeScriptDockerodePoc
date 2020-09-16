@@ -27,8 +27,8 @@ const certs = {
 // const dockerUnixSock = new Docker({ socketPath: '/var/run/docker.sock' });
 
 // use tcp
-// const hostCerts = 'c3';
-const hostCerts = 'staging';
+const hostCerts = 'c3';
+// const hostCerts = 'staging';
 const dockerTCP = new Docker({
   protocol: 'https',
   host: certs[hostCerts].host,

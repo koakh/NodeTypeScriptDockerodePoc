@@ -1,0 +1,25 @@
+{
+  "name": "type-script-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node dist/app.js",
+    "dev": "env-cmd ts-node-dev --respawn -- src/app.ts",
+    "debug": "env-cmd ts-node-dev --respawn --debug --inspect=9226 -- src/app.ts",
+    "kill-port": "fuser -k 9226/tcp"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dockerode": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/dockerode": "^2.5.34",
+    "@types/node": "^13.1.7",
+    "env-cmd": "^10.0.1",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.7.4"
+  }
+}

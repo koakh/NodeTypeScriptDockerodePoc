@@ -1,0 +1,9 @@
+{
+  "cSpell.words": [
+    "cloudcontrol",
+    "dockerode"
+  ],
+  "files.exclude": {
+    "node_modules": true
+  }
+}

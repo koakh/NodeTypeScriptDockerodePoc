@@ -22,6 +22,11 @@ const certs = {
 // HOST=staging.c3cloudcontrol.com
 // CERTS="--cacert certs/staging.c3cloudcontrol.com/ca.pem --cert certs/staging.c3cloudcontrol.com/server-cert.pem --key certs/staging.c3cloudcontrol.com/server-key.pem"
 // curl https://${HOST}:2376/images/json ${CERTS} | jq
+// 
+// HOST=c3edu.online
+// CERTS="--cacert certs/c3/ca.pem --cert certs/c3/server-cert.pem --key certs/c3/server-key.pem"
+// curl https://${HOST}:2376/images/json ${CERTS} | jq
+// curl: (35) error:0407006A:rsa routines:RSA_padding_check_PKCS1_type_1:block type is not 01
 
 // use sock
 // const dockerUnixSock = new Docker({ socketPath: '/var/run/docker.sock' });
@@ -39,6 +44,7 @@ const dockerTCP = new Docker({
 });
 
 const init = async () => {
+  debugger;
   // filter container ids
   const optionsAll = { all: true };
   // const optionsContainerId = { filters: { id: ['6b5256c25429c7f9d68a38d9a847f684f0c37eeb2e0a0d7dc92ded2686c30e90'] } };

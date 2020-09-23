@@ -1,0 +1,2029 @@
+{
+  "server": {
+    "id": "de39d186f107255204b29fcf4e9fbc0c",
+    "incarnation": 1600771350,
+    "version": "5.27.0",
+    "uptime": 83542,
+    "poll": 60,
+    "startdelay": 0,
+    "localhostname": "c3",
+    "controlfile": "/etc/monit/monitrc",
+    "httpd": {
+      "address": "localhost",
+      "port": 2812,
+      "ssl": 0
+    }
+  },
+  "platform": {
+    "name": "Linux",
+    "release": "4.15.0-65-generic",
+    "version": "#74~16.04.1-Ubuntu SMP Wed Sep 18 09:51:44 UTC 2019",
+    "machine": "x86_64",
+    "cpu": 4,
+    "memory": 4039180,
+    "swap": 998396
+  },
+  "service": [
+    {
+      "$": {
+        "type": 5
+      },
+      "name": "c3",
+      "collected_sec": 1600854890,
+      "collected_usec": 710526,
+      "status": 0,
+      "status_hint": 0,
+      "monitor": 1,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "filedescriptors": {
+        "allocated": 4256,
+        "unused": 0,
+        "maximum": 396807
+      },
+      "system": {
+        "load": {
+          "avg01": 0.04,
+          "avg05": 0.02,
+          "avg15": 0
+        },
+        "cpu": {
+          "user": 0.3,
+          "system": 0.2,
+          "nice": 0,
+          "wait": 0,
+          "hardirq": 0,
+          "softirq": 0,
+          "steal": 0,
+          "guest": 0,
+          "guestnice": 0
+        },
+        "memory": {
+          "percent": 36.6,
+          "kilobyte": 1477812
+        },
+        "swap": {
+          "percent": 0,
+          "kilobyte": 0
+        }
+      }
+    },
+    {
+      "$": {
+        "type": 7
+      },
+      "name": "ssd-temp",
+      "collected_sec": 1600854890,
+      "collected_usec": 710526,
+      "status": 0,
+      "status_hint": 0,
+      "monitor": 5,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "every": {
+        "type": 1,
+        "counter": 2,
+        "number": 5
+      },
+      "program": {
+        "started": 1600854585,
+        "status": 31,
+        "output": ""
+      }
+    },
+    {
+      "$": {
+        "type": 7
+      },
+      "name": "ssd-health",
+      "collected_sec": 1600854890,
+      "collected_usec": 710527,
+      "status": 0,
+      "status_hint": 0,
+      "monitor": 5,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "every": {
+        "type": 1,
+        "counter": 67,
+        "number": 120
+      },
+      "program": {
+        "started": 1600844673,
+        "status": 0,
+        "output": ""
+      }
+    },
+    {
+      "$": {
+        "type": 3
+      },
+      "name": "syncthing",
+      "collected_sec": 1600854890,
+      "collected_usec": 710531,
+      "status": 0,
+      "status_hint": 0,
+      "monitor": 1,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "pid": 906,
+      "ppid": 1,
+      "uid": 117,
+      "euid": 117,
+      "gid": 127,
+      "uptime": 83540,
+      "threads": 8,
+      "children": 1,
+      "memory": {
+        "percent": 0.4,
+        "percenttotal": 2.3,
+        "kilobyte": 16548,
+        "kilobytetotal": 91516
+      },
+      "cpu": {
+        "percent": 0,
+        "percenttotal": 0
+      },
+      "filedescriptors": {
+        "open": 8,
+        "opentotal": 29,
+        "limit": {
+          "soft": 1024,
+          "hard": 4096
+        }
+      },
+      "read": {
+        "bytesgeneric": {
+          "count": 0,
+          "total": 19784
+        },
+        "bytes": {
+          "count": 0,
+          "total": 17817600
+        },
+        "operations": {
+          "count": 0,
+          "total": 98
+        }
+      },
+      "write": {
+        "bytesgeneric": {
+          "count": 0,
+          "total": 3796
+        },
+        "bytes": {
+          "count": 0,
+          "total": 0
+        },
+        "operations": {
+          "count": 0,
+          "total": 63
+        }
+      }
+    },
+    {
+      "$": {
+        "type": 3
+      },
+      "name": "snmpd",
+      "collected_sec": 1600854891,
+      "collected_usec": 911964,
+      "status": 0,
+      "status_hint": 0,
+      "monitor": 1,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "pid": 1027,
+      "ppid": 1,
+      "uid": 116,
+      "euid": 116,
+      "gid": 125,
+      "uptime": 83539,
+      "threads": 1,
+      "children": 0,
+      "memory": {
+        "percent": 0.2,
+        "percenttotal": 0.2,
+        "kilobyte": 8520,
+        "kilobytetotal": 8520
+      },
+      "cpu": {
+        "percent": 0,
+        "percenttotal": 0
+      },
+      "filedescriptors": {
+        "open": 14,
+        "opentotal": 14,
+        "limit": {
+          "soft": 1024,
+          "hard": 4096
+        }
+      },
+      "read": {
+        "bytesgeneric": {
+          "count": 2289,
+          "total": 184149953
+        },
+        "bytes": {
+          "count": 0,
+          "total": 12288
+        },
+        "operations": {
+          "count": 13,
+          "total": 1095009
+        }
+      },
+      "write": {
+        "bytesgeneric": {
+          "count": 0,
+          "total": 21874
+        },
+        "bytes": {
+          "count": 0,
+          "total": 4096
+        },
+        "operations": {
+          "count": 0,
+          "total": 563
+        }
+      },
+      "port": {
+        "hostname": "localhost",
+        "portnumber": 161,
+        "request": "",
+        "protocol": "DEFAULT",
+        "type": "UDP",
+        "responsetime": 1.20142
+      }
+    },
+    {
+      "$": {
+        "type": 3
+      },
+      "name": "smartd",
+      "collected_sec": 1600854983,
+      "collected_usec": 189990,
+      "status": 0,
+      "status_hint": 0,
+      "monitor": 1,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "pid": 647,
+      "ppid": 1,
+      "uid": 0,
+      "euid": 0,
+      "gid": 0,
+      "uptime": 83542,
+      "threads": 1,
+      "children": 0,
+      "memory": {
+        "percent": 0.1,
+        "percenttotal": 0.1,
+        "kilobyte": 4140,
+        "kilobytetotal": 4140
+      },
+      "cpu": {
+        "percent": 0,
+        "percenttotal": 0
+      },
+      "filedescriptors": {
+        "open": 3,
+        "opentotal": 3,
+        "limit": {
+          "soft": 1024,
+          "hard": 4096
+        }
+      },
+      "read": {
+        "bytesgeneric": {
+          "count": 0,
+          "total": 164337
+        },
+        "bytes": {
+          "count": 0,
+          "total": 774144
+        },
+        "operations": {
+          "count": 0,
+          "total": 62
+        }
+      },
+      "write": {
+        "bytesgeneric": {
+          "count": 0,
+          "total": 5437
+        },
+        "bytes": {
+          "count": 0,
+          "total": 200704
+        },
+        "operations": {
+          "count": 0,
+          "total": 56
+        }
+      }
+    },
+    {
+      "$": {
+        "type": 2
+      },
+      "name": "smartd_bin",
+      "collected_sec": 1600854891,
+      "collected_usec": 912848,
+      "status": 0,
+      "status_hint": 0,
+      "monitor": 1,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "mode": 755,
+      "uid": 0,
+      "gid": 0,
+      "timestamps": {
+        "access": 1600768372,
+        "change": 1600768365,
+        "modify": 1599056896
+      },
+      "size": 588832,
+      "checksum": {
+        "_": "839490daa6fa46d2a503096655c580e2",
+        "$": {
+          "type": "MD5"
+        }
+      }
+    },
+    {
+      "$": {
+        "type": 2
+      },
+      "name": "smartd_rc",
+      "collected_sec": 1600854891,
+      "collected_usec": 912862,
+      "status": 0,
+      "status_hint": 0,
+      "monitor": 1,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "mode": 755,
+      "uid": 0,
+      "gid": 0,
+      "timestamps": {
+        "access": 1600768965,
+        "change": 1581957318,
+        "modify": 1453838877
+      },
+      "size": 3505,
+      "checksum": {
+        "_": "e1ff37fab620203e75462c589f5ae150",
+        "$": {
+          "type": "MD5"
+        }
+      }
+    },
+    {
+      "$": {
+        "type": 3
+      },
+      "name": "samba",
+      "collected_sec": 1600854983,
+      "collected_usec": 193321,
+      "status": 0,
+      "status_hint": 0,
+      "monitor": 1,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "pid": 1260,
+      "ppid": 1,
+      "uid": 0,
+      "euid": 0,
+      "gid": 0,
+      "uptime": 83496,
+      "threads": 1,
+      "children": 55,
+      "memory": {
+        "percent": 0.9,
+        "percenttotal": 41.6,
+        "kilobyte": 37412,
+        "kilobytetotal": 1680856
+      },
+      "cpu": {
+        "percent": 0,
+        "percenttotal": 0
+      },
+      "filedescriptors": {
+        "open": 49,
+        "opentotal": 1248,
+        "limit": {
+          "soft": 16384,
+          "hard": 16384
+        }
+      },
+      "read": {
+        "bytesgeneric": {
+          "count": 0,
+          "total": 195393
+        },
+        "bytes": {
+          "count": 0,
+          "total": 13565952
+        },
+        "operations": {
+          "count": 0,
+          "total": 268
+        }
+      },
+      "write": {
+        "bytesgeneric": {
+          "count": 0,
+          "total": 1808
+        },
+        "bytes": {
+          "count": 0,
+          "total": 8192
+        },
+        "operations": {
+          "count": 0,
+          "total": 29
+        }
+      },
+      "port": {
+        "hostname": "localhost",
+        "portnumber": 139,
+        "request": "",
+        "protocol": "DEFAULT",
+        "type": "TCP",
+        "responsetime": 0.003295
+      }
+    },
+    {
+      "$": {
+        "type": 2
+      },
+      "name": "samba__bin",
+      "collected_sec": 1600854891,
+      "collected_usec": 912920,
+      "status": 0,
+      "status_hint": 0,
+      "monitor": 1,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "mode": 755,
+      "uid": 0,
+      "gid": 0,
+      "timestamps": {
+        "access": 1600768965,
+        "change": 1581957151,
+        "modify": 1568896918
+      },
+      "size": 35816,
+      "checksum": {
+        "_": "1b25ecf32349d13483838a452bd90dd7",
+        "$": {
+          "type": "MD5"
+        }
+      }
+    },
+    {
+      "$": {
+        "type": 3
+      },
+      "name": "sshd",
+      "collected_sec": 1600854983,
+      "collected_usec": 201271,
+      "status": 0,
+      "status_hint": 0,
+      "monitor": 1,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "pid": 1319,
+      "ppid": 1,
+      "uid": 0,
+      "euid": 0,
+      "gid": 0,
+      "uptime": 83496,
+      "threads": 1,
+      "children": 3,
+      "memory": {
+        "percent": 0.2,
+        "percenttotal": 0.6,
+        "kilobyte": 6084,
+        "kilobytetotal": 24760
+      },
+      "cpu": {
+        "percent": 0,
+        "percenttotal": 0
+      },
+      "filedescriptors": {
+        "open": 5,
+        "opentotal": 29,
+        "limit": {
+          "soft": 1024,
+          "hard": 4096
+        }
+      },
+      "read": {
+        "bytesgeneric": {
+          "count": 316,
+          "total": 58553006
+        },
+        "bytes": {
+          "count": 0,
+          "total": 27729920
+        },
+        "operations": {
+          "count": 1,
+          "total": 82048
+        }
+      },
+      "write": {
+        "bytesgeneric": {
+          "count": 5,
+          "total": 1098944
+        },
+        "bytes": {
+          "count": 0,
+          "total": 126976
+        },
+        "operations": {
+          "count": 0,
+          "total": 7209
+        }
+      },
+      "port": {
+        "hostname": "localhost",
+        "portnumber": 22,
+        "request": "",
+        "protocol": "SSH",
+        "type": "TCP",
+        "responsetime": 0.007934
+      }
+    },
+    {
+      "$": {
+        "type": 2
+      },
+      "name": "sshd_bin",
+      "collected_sec": 1600854891,
+      "collected_usec": 914099,
+      "status": 0,
+      "status_hint": 0,
+      "monitor": 1,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "mode": 755,
+      "uid": 0,
+      "gid": 0,
+      "timestamps": {
+        "access": 1600854830,
+        "change": 1600768337,
+        "modify": 1590535059
+      },
+      "size": 791024,
+      "checksum": {
+        "_": "dd7effbed0add9562414a7c5f0522153",
+        "$": {
+          "type": "MD5"
+        }
+      }
+    },
+    {
+      "$": {
+        "type": 2
+      },
+      "name": "sftp_bin",
+      "collected_sec": 1600854891,
+      "collected_usec": 914244,
+      "status": 0,
+      "status_hint": 0,
+      "monitor": 1,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "mode": 755,
+      "uid": 0,
+      "gid": 0,
+      "timestamps": {
+        "access": 1600768372,
+        "change": 1600768336,
+        "modify": 1590535059
+      },
+      "size": 93320,
+      "checksum": {
+        "_": "981d73a047ae7f1331bd2f3fe72fe906",
+        "$": {
+          "type": "MD5"
+        }
+      }
+    },
+    {
+      "$": {
+        "type": 2
+      },
+      "name": "sshd_rsa_key",
+      "collected_sec": 1600854891,
+      "collected_usec": 914253,
+      "status": 0,
+      "status_hint": 0,
+      "monitor": 1,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "mode": 600,
+      "uid": 0,
+      "gid": 0,
+      "timestamps": {
+        "access": 1600768965,
+        "change": 1581957399,
+        "modify": 1581957399
+      },
+      "size": 1679,
+      "checksum": {
+        "_": "f6f89f3bb30d9a9f5faedf35b5debb4a",
+        "$": {
+          "type": "MD5"
+        }
+      }
+    },
+    {
+      "$": {
+        "type": 2
+      },
+      "name": "sshd_dsa_key",
+      "collected_sec": 1600854891,
+      "collected_usec": 914260,
+      "status": 0,
+      "status_hint": 0,
+      "monitor": 1,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "mode": 600,
+      "uid": 0,
+      "gid": 0,
+      "timestamps": {
+        "access": 1600768965,
+        "change": 1581957399,
+        "modify": 1581957399
+      },
+      "size": 668,
+      "checksum": {
+        "_": "93c64c11db943a3456818ecf1e4fe9bf",
+        "$": {
+          "type": "MD5"
+        }
+      }
+    },
+    {
+      "$": {
+        "type": 2
+      },
+      "name": "sshd_rc",
+      "collected_sec": 1600854891,
+      "collected_usec": 914270,
+      "status": 0,
+      "status_hint": 0,
+      "monitor": 1,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "mode": 644,
+      "uid": 0,
+      "gid": 0,
+      "timestamps": {
+        "access": 1600768965,
+        "change": 1581957443,
+        "modify": 1581957443
+      },
+      "size": 2537,
+      "checksum": {
+        "_": "20d1b888d5faa52df67ce803775e14e1",
+        "$": {
+          "type": "MD5"
+        }
+      }
+    },
+    {
+      "$": {
+        "type": 3
+      },
+      "name": "ntpd",
+      "collected_sec": 1600854893,
+      "collected_usec": 115674,
+      "status": 0,
+      "status_hint": 0,
+      "monitor": 1,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "pid": 1112,
+      "ppid": 1,
+      "uid": 107,
+      "euid": 107,
+      "gid": 111,
+      "uptime": 83538,
+      "threads": 1,
+      "children": 0,
+      "memory": {
+        "percent": 0.1,
+        "percenttotal": 0.1,
+        "kilobyte": 5092,
+        "kilobytetotal": 5092
+      },
+      "cpu": {
+        "percent": 0,
+        "percenttotal": 0
+      },
+      "filedescriptors": {
+        "open": 10,
+        "opentotal": 10,
+        "limit": {
+          "soft": 1024,
+          "hard": 4096
+        }
+      },
+      "read": {
+        "bytesgeneric": {
+          "count": 0,
+          "total": 177280
+        },
+        "bytes": {
+          "count": 0,
+          "total": 278528
+        },
+        "operations": {
+          "count": 0,
+          "total": 240
+        }
+      },
+      "write": {
+        "bytesgeneric": {
+          "count": 0,
+          "total": 776
+        },
+        "bytes": {
+          "count": 0,
+          "total": 8192
+        },
+        "operations": {
+          "count": 0,
+          "total": 11
+        }
+      },
+      "port": {
+        "hostname": "127.0.0.1",
+        "portnumber": 123,
+        "request": "",
+        "protocol": "DEFAULT",
+        "type": "UDP",
+        "responsetime": 1.201375
+      }
+    },
+    {
+      "$": {
+        "type": 3
+      },
+      "name": "mongodb",
+      "collected_sec": 1600854893,
+      "collected_usec": 115695,
+      "status": 0,
+      "status_hint": 0,
+      "monitor": 1,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "pid": 1321,
+      "ppid": 1,
+      "uid": 109,
+      "euid": 109,
+      "gid": 116,
+      "uptime": 83496,
+      "threads": 38,
+      "children": 0,
+      "memory": {
+        "percent": 2,
+        "percenttotal": 2,
+        "kilobyte": 80800,
+        "kilobytetotal": 80800
+      },
+      "cpu": {
+        "percent": 0.1,
+        "percenttotal": 0.1
+      },
+      "filedescriptors": {
+        "open": 65,
+        "opentotal": 65,
+        "limit": {
+          "soft": 64000,
+          "hard": 64000
+        }
+      },
+      "read": {
+        "bytesgeneric": {
+          "count": 7976,
+          "total": 1903264028
+        },
+        "bytes": {
+          "count": 0,
+          "total": 39698432
+        },
+        "operations": {
+          "count": 12,
+          "total": 1005928
+        }
+      },
+      "write": {
+        "bytesgeneric": {
+          "count": 2617,
+          "total": 110622329
+        },
+        "bytes": {
+          "count": 2981,
+          "total": 133693440
+        },
+        "operations": {
+          "count": 0,
+          "total": 10247
+        }
+      }
+    },
+    {
+      "$": {
+        "type": 4
+      },
+      "name": "license-server",
+      "collected_sec": 1600854938,
+      "collected_usec": 149145,
+      "status": 16384,
+      "status_hint": 0,
+      "monitor": 1,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "icmp": {
+        "type": "Ping",
+        "responsetime": -1
+      },
+      "port": {
+        "hostname": "es.critical-links.com",
+        "portnumber": 443,
+        "request": "",
+        "protocol": "HTTP",
+        "type": "TCP",
+        "responsetime": -1,
+        "certificate": {
+          "valid": 0
+        }
+      }
+    },
+    {
+      "$": {
+        "type": 4
+      },
+      "name": "c3-cloud-control",
+      "collected_sec": 1600854983,
+      "collected_usec": 186497,
+      "status": 16384,
+      "status_hint": 0,
+      "monitor": 1,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "icmp": {
+        "type": "Ping",
+        "responsetime": -1
+      },
+      "port": {
+        "hostname": "c3cloudcontrol.com",
+        "portnumber": 443,
+        "request": "",
+        "protocol": "HTTP",
+        "type": "TCP",
+        "responsetime": -1,
+        "certificate": {
+          "valid": 0
+        }
+      }
+    },
+    {
+      "$": {
+        "type": 3
+      },
+      "name": "docker",
+      "collected_sec": 1600854983,
+      "collected_usec": 186505,
+      "status": 0,
+      "status_hint": 0,
+      "monitor": 1,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "pid": 9612,
+      "ppid": 1,
+      "uid": 0,
+      "euid": 0,
+      "gid": 0,
+      "uptime": 63502,
+      "threads": 17,
+      "children": 3,
+      "memory": {
+        "percent": 1.8,
+        "percenttotal": 2.8,
+        "kilobyte": 72220,
+        "kilobytetotal": 112068
+      },
+      "cpu": {
+        "percent": 0,
+        "percenttotal": 0.1
+      },
+      "filedescriptors": {
+        "open": 30,
+        "opentotal": 67,
+        "limit": {
+          "soft": 1048576,
+          "hard": 1048576
+        }
+      },
+      "read": {
+        "bytesgeneric": {
+          "count": 170,
+          "total": 16162117
+        },
+        "bytes": {
+          "count": 0,
+          "total": 0
+        },
+        "operations": {
+          "count": 12,
+          "total": 754272
+        }
+      },
+      "write": {
+        "bytesgeneric": {
+          "count": 162,
+          "total": 10530787
+        },
+        "bytes": {
+          "count": 0,
+          "total": 393216
+        },
+        "operations": {
+          "count": 6,
+          "total": 373908
+        }
+      }
+    },
+    {
+      "$": {
+        "type": 0
+      },
+      "name": "disk",
+      "collected_sec": 1600854983,
+      "collected_usec": 186583,
+      "status": 0,
+      "status_hint": 0,
+      "monitor": 1,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "fstype": "ext4",
+      "fsflags": "rw,relatime,errors=remount-ro,data=ordered",
+      "mode": 660,
+      "uid": 0,
+      "gid": 6,
+      "block": {
+        "percent": 49.1,
+        "usage": 14315.6,
+        "total": 29146.7
+      },
+      "inode": {
+        "percent": 35.2,
+        "usage": 669524,
+        "total": 1901280
+      },
+      "read": {
+        "bytesgeneric": {
+          "count": 0,
+          "total": 993375232
+        },
+        "operations": {
+          "count": 0,
+          "total": 29170
+        }
+      },
+      "write": {
+        "bytesgeneric": {
+          "count": 19956,
+          "total": 2525450240
+        },
+        "operations": {
+          "count": 2,
+          "total": 136047
+        }
+      },
+      "servicetime": {
+        "read": 0,
+        "write": 3.016
+      }
+    },
+    {
+      "$": {
+        "type": 3
+      },
+      "name": "crond",
+      "collected_sec": 1600854983,
+      "collected_usec": 201280,
+      "status": 0,
+      "status_hint": 0,
+      "monitor": 1,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "pid": 635,
+      "ppid": 1,
+      "uid": 0,
+      "euid": 0,
+      "gid": 0,
+      "uptime": 83542,
+      "threads": 1,
+      "children": 0,
+      "memory": {
+        "percent": 0.1,
+        "percenttotal": 0.1,
+        "kilobyte": 2984,
+        "kilobytetotal": 2984
+      },
+      "cpu": {
+        "percent": 0,
+        "percenttotal": 0
+      },
+      "filedescriptors": {
+        "open": 4,
+        "opentotal": 4,
+        "limit": {
+          "soft": 1024,
+          "hard": 4096
+        }
+      },
+      "read": {
+        "bytesgeneric": {
+          "count": 0,
+          "total": 210833186
+        },
+        "bytes": {
+          "count": 0,
+          "total": 35885056
+        },
+        "operations": {
+          "count": 0,
+          "total": 137417
+        }
+      },
+      "write": {
+        "bytesgeneric": {
+          "count": 0,
+          "total": 13915412
+        },
+        "bytes": {
+          "count": 0,
+          "total": 16900096
+        },
+        "operations": {
+          "count": 0,
+          "total": 24252
+        }
+      }
+    },
+    {
+      "$": {
+        "type": 2
+      },
+      "name": "cron_bin",
+      "collected_sec": 1600854983,
+      "collected_usec": 186684,
+      "status": 0,
+      "status_hint": 0,
+      "monitor": 1,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "mode": 755,
+      "uid": 0,
+      "gid": 0,
+      "timestamps": {
+        "access": 1600768991,
+        "change": 1581956948,
+        "modify": 1459893553
+      },
+      "size": 44472,
+      "checksum": {
+        "_": "162d6f607a789827ab83f6393c566acf",
+        "$": {
+          "type": "MD5"
+        }
+      }
+    },
+    {
+      "$": {
+        "type": 2
+      },
+      "name": "cron_rc",
+      "collected_sec": 1600854983,
+      "collected_usec": 186698,
+      "status": 0,
+      "status_hint": 0,
+      "monitor": 1,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "mode": 755,
+      "uid": 0,
+      "gid": 0,
+      "timestamps": {
+        "access": 1600768991,
+        "change": 1581956910,
+        "modify": 1459893542
+      },
+      "size": 3049,
+      "checksum": {
+        "_": "85d7a3783889ea93dcda2fb488420c1c",
+        "$": {
+          "type": "MD5"
+        }
+      }
+    },
+    {
+      "$": {
+        "type": 1
+      },
+      "name": "cron_spool",
+      "collected_sec": 1600854983,
+      "collected_usec": 186701,
+      "status": 0,
+      "status_hint": 0,
+      "monitor": 1,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "mode": 1730,
+      "uid": 0,
+      "gid": 107,
+      "timestamps": {
+        "access": 1600771350,
+        "change": 1581956977,
+        "modify": 1459893548
+      }
+    },
+    {
+      "$": {
+        "type": 3
+      },
+      "name": "c3-updater",
+      "collected_sec": 1600854983,
+      "collected_usec": 186705,
+      "status": 0,
+      "status_hint": 0,
+      "monitor": 1,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "pid": 607,
+      "ppid": 1,
+      "uid": 0,
+      "euid": 0,
+      "gid": 0,
+      "uptime": 83542,
+      "threads": 10,
+      "children": 0,
+      "memory": {
+        "percent": 0.9,
+        "percenttotal": 0.9,
+        "kilobyte": 35808,
+        "kilobytetotal": 35808
+      },
+      "cpu": {
+        "percent": 0,
+        "percenttotal": 0
+      },
+      "filedescriptors": {
+        "open": 11,
+        "opentotal": 11,
+        "limit": {
+          "soft": 1048576,
+          "hard": 1048576
+        }
+      },
+      "read": {
+        "bytesgeneric": {
+          "count": 0,
+          "total": 1779321
+        },
+        "bytes": {
+          "count": 0,
+          "total": 25300992
+        },
+        "operations": {
+          "count": 0,
+          "total": 493
+        }
+      },
+      "write": {
+        "bytesgeneric": {
+          "count": 0,
+          "total": 1509844
+        },
+        "bytes": {
+          "count": 0,
+          "total": 1519616
+        },
+        "operations": {
+          "count": 0,
+          "total": 65
+        }
+      }
+    },
+    {
+      "$": {
+        "type": 3
+      },
+      "name": "c3-system-core",
+      "collected_sec": 1600854983,
+      "collected_usec": 186707,
+      "status": 0,
+      "status_hint": 0,
+      "monitor": 1,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "pid": 637,
+      "ppid": 1,
+      "uid": 0,
+      "euid": 0,
+      "gid": 0,
+      "uptime": 83542,
+      "threads": 10,
+      "children": 0,
+      "memory": {
+        "percent": 1.4,
+        "percenttotal": 1.4,
+        "kilobyte": 58448,
+        "kilobytetotal": 58448
+      },
+      "cpu": {
+        "percent": 0,
+        "percenttotal": 0
+      },
+      "filedescriptors": {
+        "open": 12,
+        "opentotal": 12,
+        "limit": {
+          "soft": 1048576,
+          "hard": 1048576
+        }
+      },
+      "read": {
+        "bytesgeneric": {
+          "count": 0,
+          "total": 6823818
+        },
+        "bytes": {
+          "count": 0,
+          "total": 33349632
+        },
+        "operations": {
+          "count": 0,
+          "total": 15410
+        }
+      },
+      "write": {
+        "bytesgeneric": {
+          "count": 0,
+          "total": 117891
+        },
+        "bytes": {
+          "count": 0,
+          "total": 4096
+        },
+        "operations": {
+          "count": 0,
+          "total": 14243
+        }
+      }
+    },
+    {
+      "$": {
+        "type": 3
+      },
+      "name": "c3-lexactivator-api",
+      "collected_sec": 1600854983,
+      "collected_usec": 186709,
+      "status": 0,
+      "status_hint": 0,
+      "monitor": 1,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "pid": 644,
+      "ppid": 1,
+      "uid": 0,
+      "euid": 0,
+      "gid": 0,
+      "uptime": 83542,
+      "threads": 11,
+      "children": 0,
+      "memory": {
+        "percent": 1.4,
+        "percenttotal": 1.4,
+        "kilobyte": 56840,
+        "kilobytetotal": 56840
+      },
+      "cpu": {
+        "percent": 0,
+        "percenttotal": 0
+      },
+      "filedescriptors": {
+        "open": 14,
+        "opentotal": 14,
+        "limit": {
+          "soft": 1048576,
+          "hard": 1048576
+        }
+      },
+      "read": {
+        "bytesgeneric": {
+          "count": 7074,
+          "total": 13813437
+        },
+        "bytes": {
+          "count": 0,
+          "total": 37609472
+        },
+        "operations": {
+          "count": 5,
+          "total": 9451
+        }
+      },
+      "write": {
+        "bytesgeneric": {
+          "count": 4647,
+          "total": 5959451
+        },
+        "bytes": {
+          "count": 4512,
+          "total": 5865472
+        },
+        "operations": {
+          "count": 2,
+          "total": 2066
+        }
+      }
+    },
+    {
+      "$": {
+        "type": 3
+      },
+      "name": "c3-kiosk",
+      "collected_sec": 1600854983,
+      "collected_usec": 186711,
+      "status": 0,
+      "status_hint": 0,
+      "monitor": 1,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "pid": 1356,
+      "ppid": 1,
+      "uid": 0,
+      "euid": 0,
+      "gid": 0,
+      "uptime": 83496,
+      "threads": 1,
+      "children": 13,
+      "memory": {
+        "percent": 0,
+        "percenttotal": 17,
+        "kilobyte": 1664,
+        "kilobytetotal": 686964
+      },
+      "cpu": {
+        "percent": 0,
+        "percenttotal": 0
+      },
+      "filedescriptors": {
+        "open": 4,
+        "opentotal": 391,
+        "limit": {
+          "soft": 1024,
+          "hard": 4096
+        }
+      },
+      "read": {
+        "bytesgeneric": {
+          "count": 0,
+          "total": 88844
+        },
+        "bytes": {
+          "count": 0,
+          "total": 253952
+        },
+        "operations": {
+          "count": 0,
+          "total": 212
+        }
+      },
+      "write": {
+        "bytesgeneric": {
+          "count": 0,
+          "total": 770
+        },
+        "bytes": {
+          "count": 0,
+          "total": 12288
+        },
+        "operations": {
+          "count": 0,
+          "total": 25
+        }
+      }
+    },
+    {
+      "$": {
+        "type": 7
+      },
+      "name": "c3-cloud-client-archives",
+      "collected_sec": 1600854983,
+      "collected_usec": 187363,
+      "status": 0,
+      "status_hint": 0,
+      "monitor": 1,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "program": {
+        "started": 1600854983,
+        "status": 0,
+        "output": ""
+      }
+    },
+    {
+      "$": {
+        "type": 3
+      },
+      "name": "c3-cloud-client",
+      "collected_sec": 1600854983,
+      "collected_usec": 187369,
+      "status": 0,
+      "status_hint": 0,
+      "monitor": 1,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "pid": 636,
+      "ppid": 1,
+      "uid": 0,
+      "euid": 0,
+      "gid": 0,
+      "uptime": 83542,
+      "threads": 10,
+      "children": 0,
+      "memory": {
+        "percent": 1.4,
+        "percenttotal": 1.4,
+        "kilobyte": 58452,
+        "kilobytetotal": 58452
+      },
+      "cpu": {
+        "percent": 0,
+        "percenttotal": 0
+      },
+      "filedescriptors": {
+        "open": 12,
+        "opentotal": 12,
+        "limit": {
+          "soft": 1048576,
+          "hard": 1048576
+        }
+      },
+      "read": {
+        "bytesgeneric": {
+          "count": 17,
+          "total": 4390452
+        },
+        "bytes": {
+          "count": 0,
+          "total": 27213824
+        },
+        "operations": {
+          "count": 0,
+          "total": 11593
+        }
+      },
+      "write": {
+        "bytesgeneric": {
+          "count": 6,
+          "total": 489767
+        },
+        "bytes": {
+          "count": 27,
+          "total": 671744
+        },
+        "operations": {
+          "count": 0,
+          "total": 7005
+        }
+      }
+    },
+    {
+      "$": {
+        "type": 3
+      },
+      "name": "c3-backend",
+      "collected_sec": 1600854983,
+      "collected_usec": 187372,
+      "status": 0,
+      "status_hint": 0,
+      "monitor": 1,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "pid": 1964,
+      "ppid": 1,
+      "uid": 0,
+      "euid": 0,
+      "gid": 0,
+      "uptime": 83489,
+      "threads": 10,
+      "children": 0,
+      "memory": {
+        "percent": 2.1,
+        "percenttotal": 2.1,
+        "kilobyte": 84260,
+        "kilobytetotal": 84260
+      },
+      "cpu": {
+        "percent": 0,
+        "percenttotal": 0
+      },
+      "filedescriptors": {
+        "open": 28,
+        "opentotal": 28,
+        "limit": {
+          "soft": 1048576,
+          "hard": 1048576
+        }
+      },
+      "read": {
+        "bytesgeneric": {
+          "count": 4184,
+          "total": 335208519
+        },
+        "bytes": {
+          "count": 0,
+          "total": 655360
+        },
+        "operations": {
+          "count": 5,
+          "total": 421145
+        }
+      },
+      "write": {
+        "bytesgeneric": {
+          "count": 279,
+          "total": 6874322
+        },
+        "bytes": {
+          "count": 27,
+          "total": 208896
+        },
+        "operations": {
+          "count": 5,
+          "total": 354676
+        }
+      }
+    },
+    {
+      "$": {
+        "type": 3
+      },
+      "name": "c3-analytics",
+      "collected_sec": 1600854983,
+      "collected_usec": 187374,
+      "status": 0,
+      "status_hint": 0,
+      "monitor": 1,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "pid": 615,
+      "ppid": 1,
+      "uid": 0,
+      "euid": 0,
+      "gid": 0,
+      "uptime": 83542,
+      "threads": 10,
+      "children": 0,
+      "memory": {
+        "percent": 1.7,
+        "percenttotal": 1.7,
+        "kilobyte": 68720,
+        "kilobytetotal": 68720
+      },
+      "cpu": {
+        "percent": 0,
+        "percenttotal": 0
+      },
+      "filedescriptors": {
+        "open": 11,
+        "opentotal": 11,
+        "limit": {
+          "soft": 1048576,
+          "hard": 1048576
+        }
+      },
+      "read": {
+        "bytesgeneric": {
+          "count": 0,
+          "total": 2300335
+        },
+        "bytes": {
+          "count": 0,
+          "total": 5120000
+        },
+        "operations": {
+          "count": 0,
+          "total": 594
+        }
+      },
+      "write": {
+        "bytesgeneric": {
+          "count": 0,
+          "total": 705
+        },
+        "bytes": {
+          "count": 0,
+          "total": 0
+        },
+        "operations": {
+          "count": 0,
+          "total": 82
+        }
+      }
+    },
+    {
+      "$": {
+        "type": 3
+      },
+      "name": "named",
+      "collected_sec": 1600854983,
+      "collected_usec": 188167,
+      "status": 0,
+      "status_hint": 0,
+      "monitor": 1,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "pid": 674,
+      "ppid": 1,
+      "uid": 110,
+      "euid": 110,
+      "gid": 117,
+      "uptime": 83542,
+      "threads": 7,
+      "children": 0,
+      "memory": {
+        "percent": 1.8,
+        "percenttotal": 1.8,
+        "kilobyte": 72608,
+        "kilobytetotal": 72608
+      },
+      "cpu": {
+        "percent": 0,
+        "percenttotal": 0
+      },
+      "filedescriptors": {
+        "open": 35,
+        "opentotal": 35,
+        "limit": {
+          "soft": 1048576,
+          "hard": 1048576
+        }
+      },
+      "read": {
+        "bytesgeneric": {
+          "count": 15,
+          "total": 1242252
+        },
+        "bytes": {
+          "count": 0,
+          "total": 31105024
+        },
+        "operations": {
+          "count": 4,
+          "total": 257545
+        }
+      },
+      "write": {
+        "bytesgeneric": {
+          "count": 15,
+          "total": 1040949
+        },
+        "bytes": {
+          "count": 0,
+          "total": 0
+        },
+        "operations": {
+          "count": 2,
+          "total": 130108
+        }
+      },
+      "port": [
+        {
+          "hostname": "127.0.0.1",
+          "portnumber": 53,
+          "request": "",
+          "protocol": "DNS",
+          "type": "UDP",
+          "responsetime": 0.00033
+        },
+        {
+          "hostname": "127.0.0.1",
+          "portnumber": 53,
+          "request": "",
+          "protocol": "DNS",
+          "type": "TCP",
+          "responsetime": 0.000446
+        }
+      ]
+    },
+    {
+      "$": {
+        "type": 3
+      },
+      "name": "apache",
+      "collected_sec": 1600854983,
+      "collected_usec": 201807,
+      "status": 0,
+      "status_hint": 0,
+      "monitor": 1,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "pid": 1546,
+      "ppid": 1,
+      "uid": 0,
+      "euid": 0,
+      "gid": 0,
+      "uptime": 83494,
+      "threads": 1,
+      "children": 11,
+      "memory": {
+        "percent": 1,
+        "percenttotal": 4.5,
+        "kilobyte": 38876,
+        "kilobytetotal": 183460
+      },
+      "cpu": {
+        "percent": 0,
+        "percenttotal": 0
+      },
+      "filedescriptors": {
+        "open": 13,
+        "opentotal": 171,
+        "limit": {
+          "soft": 8192,
+          "hard": 8192
+        }
+      },
+      "read": {
+        "bytesgeneric": {
+          "count": 0,
+          "total": 428935
+        },
+        "bytes": {
+          "count": 0,
+          "total": 13705216
+        },
+        "operations": {
+          "count": 0,
+          "total": 1995
+        }
+      },
+      "write": {
+        "bytesgeneric": {
+          "count": 0,
+          "total": 1256583
+        },
+        "bytes": {
+          "count": 0,
+          "total": 3944448
+        },
+        "operations": {
+          "count": 0,
+          "total": 1739
+        }
+      },
+      "port": {
+        "hostname": "localhost",
+        "portnumber": 80,
+        "request": "/server-status",
+        "protocol": "HTTP",
+        "type": "TCP",
+        "responsetime": 0.000519
+      }
+    },
+    {
+      "$": {
+        "type": 2
+      },
+      "name": "apache_bin",
+      "collected_sec": 1600854983,
+      "collected_usec": 189799,
+      "status": 0,
+      "status_hint": 0,
+      "monitor": 1,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "mode": 755,
+      "uid": 0,
+      "gid": 0,
+      "timestamps": {
+        "access": 1600854830,
+        "change": 1600768293,
+        "modify": 1597282570
+      },
+      "size": 662560,
+      "checksum": {
+        "_": "17956d1245064f098e34890ace693f96",
+        "$": {
+          "type": "MD5"
+        }
+      }
+    },
+    {
+      "$": {
+        "type": 2
+      },
+      "name": "apache_rc",
+      "collected_sec": 1600854983,
+      "collected_usec": 189846,
+      "status": 0,
+      "status_hint": 0,
+      "monitor": 1,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "mode": 755,
+      "uid": 0,
+      "gid": 0,
+      "timestamps": {
+        "access": 1600768991,
+        "change": 1581957270,
+        "modify": 1528727072
+      },
+      "size": 8087,
+      "checksum": {
+        "_": "744ef9ca584493299c353e2251cbf993",
+        "$": {
+          "type": "MD5"
+        }
+      }
+    },
+    {
+      "$": {
+        "type": 3
+      },
+      "name": "acpid",
+      "collected_sec": 1600854983,
+      "collected_usec": 201812,
+      "status": 0,
+      "status_hint": 0,
+      "monitor": 1,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "pid": 606,
+      "ppid": 1,
+      "uid": 0,
+      "euid": 0,
+      "gid": 0,
+      "uptime": 83542,
+      "threads": 1,
+      "children": 0,
+      "memory": {
+        "percent": 0,
+        "percenttotal": 0,
+        "kilobyte": 1308,
+        "kilobytetotal": 1308
+      },
+      "cpu": {
+        "percent": 0,
+        "percenttotal": 0
+      },
+      "filedescriptors": {
+        "open": 8,
+        "opentotal": 8,
+        "limit": {
+          "soft": 1024,
+          "hard": 4096
+        }
+      },
+      "read": {
+        "bytesgeneric": {
+          "count": 0,
+          "total": 2569
+        },
+        "bytes": {
+          "count": 0,
+          "total": 53248
+        },
+        "operations": {
+          "count": 0,
+          "total": 10
+        }
+      },
+      "write": {
+        "bytesgeneric": {
+          "count": 0,
+          "total": 32
+        },
+        "bytes": {
+          "count": 0,
+          "total": 0
+        },
+        "operations": {
+          "count": 0,
+          "total": 8
+        }
+      }
+    },
+    {
+      "$": {
+        "type": 2
+      },
+      "name": "acpid_bin",
+      "collected_sec": 1600854983,
+      "collected_usec": 189962,
+      "status": 0,
+      "status_hint": 0,
+      "monitor": 1,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "mode": 755,
+      "uid": 0,
+      "gid": 0,
+      "timestamps": {
+        "access": 1600768991,
+        "change": 1581957162,
+        "modify": 1460155019
+      },
+      "size": 48112,
+      "checksum": {
+        "_": "e2cfb6da6f38ac21a973ff6d00fe7782",
+        "$": {
+          "type": "MD5"
+        }
+      }
+    },
+    {
+      "$": {
+        "type": 2
+      },
+      "name": "acpid_rc",
+      "collected_sec": 1600854983,
+      "collected_usec": 189976,
+      "status": 0,
+      "status_hint": 0,
+      "monitor": 1,
+      "monitormode": 0,
+      "onreboot": 0,
+      "pendingaction": 0,
+      "mode": 755,
+      "uid": 0,
+      "gid": 0,
+      "timestamps": {
+        "access": 1600768991,
+        "change": 1581957314,
+        "modify": 1455057805
+      },
+      "size": 2243,
+      "checksum": {
+        "_": "05d217072d397076fb17c42d27d66564",
+        "$": {
+          "type": "MD5"
+        }
+      }
+    }
+  ]
+}

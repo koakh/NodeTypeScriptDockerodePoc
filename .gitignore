@@ -83,5 +83,4 @@ typings/
 ```
 
 certs/
-bak/
-bak2/
+.bak/

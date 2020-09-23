@@ -1,7 +1,7 @@
-const { readFileSync } = require('fs');
+import { readFileSync } from 'fs';
 import Docker, { ContainerInfo } from 'dockerode';
 
-const certs = {
+const configs = {
   c3: {
     host: 'c3edu.online',
     port: 2376,
@@ -32,15 +32,15 @@ const certs = {
 // const dockerUnixSock = new Docker({ socketPath: '/var/run/docker.sock' });
 
 // use tcp
-const hostCerts = 'c3';
+const host = 'c3';
 // const hostCerts = 'staging';
 const dockerTCP = new Docker({
   protocol: 'https',
-  host: certs[hostCerts].host,
-  port: certs[hostCerts].port,
-  ca: readFileSync(certs[hostCerts].ca),
-  cert: readFileSync(certs[hostCerts].cert),
-  key: readFileSync(certs[hostCerts].key)
+  host: configs[host].host,
+  port: configs[host].port,
+  ca: readFileSync(configs[host].ca),
+  cert: readFileSync(configs[host].cert),
+  key: readFileSync(configs[host].key)
 });
 
 const init = async () => {

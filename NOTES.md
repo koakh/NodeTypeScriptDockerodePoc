@@ -71,7 +71,7 @@ $ mv docker-engine/ c3
 $ cd ..
 ```
 
-## Test remove request
+## Test remote request
 
 ```shell
 $ HOST=c3edu.online

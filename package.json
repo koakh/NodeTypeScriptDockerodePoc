@@ -13,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dockerode": "^3.2.1"
+    "dockerode": "^3.3.0"
   },
   "devDependencies": {
     "@types/dockerode": "^2.5.34",
